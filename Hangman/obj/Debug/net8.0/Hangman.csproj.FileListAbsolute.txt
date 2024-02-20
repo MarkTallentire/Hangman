@@ -12,3 +12,4 @@
 /Users/marktallentire/aplayersguide/TheCatacombs/Hangman/Hangman/obj/Debug/net8.0/Hangman.pdb
 /Users/marktallentire/aplayersguide/TheCatacombs/Hangman/Hangman/obj/Debug/net8.0/Hangman.genruntimeconfig.cache
 /Users/marktallentire/aplayersguide/TheCatacombs/Hangman/Hangman/obj/Debug/net8.0/ref/Hangman.dll
+/Users/marktallentire/aplayersguide/TheCatacombs/Hangman/Hangman/obj/Debug/net8.0/Hangman.sourcelink.json

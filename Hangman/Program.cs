@@ -36,15 +36,13 @@ public class HangmanGame
             inputOutput.Render(_word, _guesses);
             if (CheckIfWon())
             {
-                Console.WriteLine("You're winner!");
-                Environment.Exit(0);
+                inputOutput.ShowGameWon();
             };
 
             if (!CheckGuess(guess)) _numberOfIncorrectGuesses++;
             _numberOfGuesses++;
         }
-        
-        Console.WriteLine("You Lose");
+       inputOutput.ShowGameOver();
     }
 
     private bool CheckGuess(char guess)
@@ -59,7 +57,6 @@ public class HangmanGame
             if (!_guesses.Contains(char.ToLower(_word[i])))
                 return false;
         }
-
         return true;
     }
 }
@@ -89,6 +86,18 @@ public class InputOutput
         }
         
         Console.WriteLine();
+    }
+
+    public void ShowGameOver()
+    {
+        Console.WriteLine("You Lose");
+        Environment.Exit(0);
+    }
+
+    public void ShowGameWon()
+    {
+        Console.WriteLine("You're winner!");
+        Environment.Exit(0);
     }
 }
 
